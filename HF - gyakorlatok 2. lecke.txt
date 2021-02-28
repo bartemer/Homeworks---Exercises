@@ -1,0 +1,160 @@
+2/1 Nem tesztelhető követelmények
+
+https://www.online-calculator.com/
+
+A nem tesztelhető követelmények fejlesztői oldalról gyakran nem is megvalósíthatók, mert nem elég konkrétak, nem egzaktak vagy szubjektívek.
+
+1. az online számológépnek könnyen használhatónak kell lennie
+2. kinézete legyen igényes, kellemes színekkel, szép dizájnos
+3. minden böngésző támogassa a használatát
+4. a számológép logikus felépítésű legyen
+5. a kiszámolt eredményeket gyorsan jelenítse meg
+
+
+
+2/2 Követelmények javítása
+
+Fogalmazd át az alábbi követelményeket úgy, hogy tartalmilag ugyanezt jelentsék, de feleljen meg a követelményekkel kapcsolatos elvárásoknak!
+
+1. "Érdemes az éttermeket látványos jelölővel kihelyezni a térképre, hogy könnyű legyen észrevenni őket."
+Megoldás: "Az éttermeket a térképen meg kell jeleníteni."
+
+2. "Az étterem listában minimum 10, de leginkább több étterem ki kell férjen minden felbontáson a képernyőre."
+Megoldás: "Az étterem listában min. 10, max. 20 db étterem megjelenítését biztosítani kell."
+
+3. "Az étterem leírás elejét megjeleníthetjük az alkalmazásban, a maradék leírás kattintásra külön felugró ablakban jelenjen meg."
+Megoldás: "Az étterem leírás első 25 karakterének meg kell jelennie az alkalmazás főfelületén, a teljes leírás pedig legyen megtekinthető egy kattintásra felugró külön ablakban." 
+
+4. "Az étterem értékelések pontszámának átlagát pontosan kell kiszámítani és pirossal vagy narancssárgával kell megjeleníteni az étterem nevétől jobbra."
+Megoldás: "Az étterem értékelések pontszámának átlagát egy tizedes pontossággal piros színnel kell megjeleníteni közvetlenül az étterem nevétől jobbra."
+
+5. "Gondoskodjunk arról, hogy a bejelentkezett felhasználók által leadott értékelések az összes értékelés között az első lapon jelenjenek meg, hogy mindenkinek azonnal látszódjon a saját véleménye."
+Megoldás: "A felhasználó által adott értékelés legyen az első látható bejegyzés a kezdőlapon, ha be van jelentkezve."
+
+
+
+2/3 Követelmények írása 1.
+Egy új weboldalt szeretnénk fejleszteni, ahol felsőoktatási intézményeket tudnak a hallgatók értékelni. A felsőoktatási intézmények listáját csak adminisztrátorok tudják bővíteni, ők adhatják meg az intézmények kategóriáit is. Az értékelők regisztráció után bármely intézményre le tudnak adni egy szubjektív pontszám és szöveg alapú értékelést. Az értékeléseket később tudják törölni vagy módosítani. Az intézményekből mindenféle szempont szerint szűrve és rendezve lehet listákat kérni (város, értékelések száma, értékelések átlaga, kategóriák, stb.).
+Írj ehhez a rendszerhez 5 magas szintű és 15 alacsonyabb szintű felhasználói követelményt,amely teljesen lefedi a rendszer működését!
+Minden követelményhez határozz meg prioritást 5-ös skálán, ahol az 1-es a legfontosabb, 5-ös a legkevésbé fontos követelmény.
+
+I. Magas szintű felhasználói követelmények:
+	1. A weboldalon a hallgatók a különböző felsőoktatási intézményeket tudják értékelni. (1)
+	2. Az értékelés funkció regisztrációhoz legyen kötve. (1)
+	3. Pontszám és szöveg alapú értékelést is lehessen létrehozni. (2)
+	4. Lehessen az értékeléseket utólagosan módosítani vagy törölni. (3)
+	5. Lehessen az intézmények között keresni. (2)
+
+II. Alacsony szintű felhasználói követelmények:
+	1. Nem bejelentkezett felhasználónak csak megtekintési joga van.(4)
+        2. A regisztrációhoz e-mail cím, oktatási azonosító és jelszó legyen szükséges. (1)
+	3. A jelszó minimum 5, maximum 15 karakter hosszú lehet. (3)
+	4. A jelszó csak kis és nagy betűt és egész számot tartalmazhat. (1)
+	5. A bejelentkezett felhasználó az oktatási azonosítónak megfelelő intézményt tudja csak értékelni. (1)
+	6. A regisztrált felhasználóknak legyen lehetősége numerikus pontozásra. (1)
+	7. Az intézmények pontszámozása 1-től 10-ig történhet, ahol 1 a legrosszabb, 10 a legjobb értékelés. (3)
+	8. Az intézmények pontszámának átlagát közvetlenül az intézmény neve mellett jelenítse meg a rendszer. (5)
+	9. A regisztrált felhasználók értékelhessék az intézményeket szövegesen is, minimum 20, maximum 160 karakterben. (2)
+	10. A szöveges értékelés megadása legyen opcionális. (3)
+	11. A saját értékeléseiket utólag is tudják módosítani, illetve törölni a regisztrált felhasználók. (2)
+	12. Az intézményeket lehessen szűrni az alábbi szempontok mentén: város, értékelések száma, értékelések átlaga, kategóriák. (3)
+	13. Az intézményeket lehessen többféle szempont alapján rendezni: értékelések átlaga, az intézmények neve abc sorrendben, az értékelések mennyisége. (3)
+	14. Lehessen kombinálni a különböző szűrőket és rendezési elveket. (4)
+	15. Csak az adminisztrátorok bővíthetik a felsőoktatási intézmények listáját. (1)
+
+
+
+2/4 Követelmények írása 2.
+Válassz egy gyakran használt mobilalkalmazást (például Skype, Időkép, Viber, Youtube, Instagram, stb.) és 
+írj a választott rendszerhez 5 magas szintű és 15 alacsonyabb szintű felhasználói követelményt! 
+Úgy fogalmazd meg a követelményeket, hogy a jelenlegi működést irod le, vagyis mindtha előzetesen született volna a követelmény a rendszerhez. 
+Ügyelj a tesztelhetőségre!
+Minden követelményhez határozz meg prioritást 5-ös skálán, ahol az 1-es a legfontosabb, 5-ös a legkevésbé fontos követelmény!
+
+pl. Skype:
+Magas szintű követelmények:
+	1. Hívás kezdeményezése és fogadása (1)
+	2. Üzenet írása, küldése és fogadása (1)
+	3. Regisztrálási lehetőség: felhasználónév, jelszó megadása (1)
+	4. Csatolmányok hozzáadásának lehetősége az üzenetekhez (2)
+	5. Multiplatform (3)
+
+Alacsony szintű követelmények: 
+	1. Felhasználó név hossza min. 5 max. 15 karakter hosszú legyen (2)
+	2. Felhasználónév tartalmazhat kis és nagy betüt, egész számokat és pontokat. (4)
+	3. Ellenőrizni kell, hogy a megadott felhasználói név ne legyen foglalt. (1)
+	4. Felhasználói név foglaltság esetén adjon legalább 3 szabad ajánlatot az oldal. (2)
+	5. A jelszó min. 6 karakter hosszú legyen (3)
+	6. A jelszó tartalmazhat kis és nagy betűket és egész számokat (4)
+	7. Jelszó megerősítése lehetőség (3)
+	8. Jelszó emlékeztető beállítása (2)
+	9. Regisztrálás után e-mail validáció (2)
+	10. Az üzenetek érkezési sorrendben jelenjenek meg. (1)
+	11. Üzenet továbbítási lehetőség (1)
+	12. Emojik használatának lehetősége (1)
+	13. Üzenet érkezéséről hangjel értesít (2)
+	14. Elmulasztott hívásokról üzenet jöjjön (3)
+	15. Hívás minőség értékelési lehetőség 1-től 5-ig skálán (4)
+
+
+
+2/5 Követelmények írása 3.
+Válassz egy gyakran használt webes alkalmazást (például E-Digital, Időkép, Wikipédia, Gmail, NoSalty, stb.) és 
+írj a választott rendszerhez 5 magas szintű és 15 alacsonyabb szintű felhasználói követelményt! 
+Úgy fogalmazd meg a követelményeket, hogy a jelenlegi működést irod le, vagyis mindtha előzetesen született volna a követelmény a rendszerhez. 
+Ügyelj a tesztelhetőségre!
+Minden követelményhez határozz meg prioritást 5-ös skálán, ahol az 1-es a legfontosabb, 5-ös a legkevésbé fontos követelmény!
+
+pl. Gmail:
+Magas szintű követelmények:
+	1. Email cím regisztráció, email cím ellenőrzés, jelszó validáció (1)
+	2. Levelek írása, fogadása, olvasása (1)
+	3. Üzenetek kategorizálása: bejövő, elküldött, spam, törölt. (3)
+	4. A leveleknél név, levél tárgya és dátum/időt fel kell tüntetni (2)
+	5. Csatolmányok hozzáadásának lehetősége (2)
+
+Alacsony szintű követelmények: 
+	1. Regisztráció esetén családnév, utónév megadása (1)
+	2. Felhasználó névben: betűk, számok és pontok fordulhatnak elő. (3)
+	3. A megadott felhasználói név foglaltságának ellenőrzése. (1)
+	4. Felhasználói név foglaltság esetén adjon legalább 3 szabad ajánlatot az oldal. (3)
+	5. A jelszó legalább 8 karakter hosszú legyen és lehet benne kis és nagy betűk, egész számok és szimbólumok (3)
+	6. Legyen jelszó megerősítése mező (2)	  
+	7. Jelszó megadása esetén legyen megjeleníthető és elrejthető a begépelt jelszó. (4)
+        8. Regisztrációs oldalon legyen választható az oldal nyelve: magyar, angol, német, francia, spanyol, olasz (3)
+	9. A regisztrációnál jelszó emlékeztető segítő kérdések beállítása (2)
+	10. Telefonszám megadható (3)
+	11. Másodlagos email cím megadása (3)
+	12. Elküldött email visszavonása 5 mp-ig legyen elérhető. (5)
+	13. A levelek érkezési sorrendben jelenjenek meg. (1)
+	14. A leveleket ki lehessen jelölni (1)
+	15. Kimenő emailek ütemezési lehetősége (3)
+
+
+
+2/6 Tesztelhetőség a követelményekben 
+A korábban példaként megadott nem tesztelhető követelményeket próbáld úgy átfogalmazni,hogy hasonlót jelentsenek, de teljesüljön a tesztelhetőség kritériuma mindegyiknél!
+
+1. „Az éttermek listájának megjelenítése legyen gyors.”
+Megoldás: "Az éttermek listájának megjelenítése történjen 1 mp-en belül."
+
+2. „Az étterem kereső felületnek könnyen használhatónak kell lennie.”
+Megoldás: "Az étterem kereső felületnek 25px-es ikonokat kell tartalmazni."
+
+3. "Az étterem keresőnek minden mobil operációs rendszeren működnie kell.”
+Megoldás: "Az étterem keresőnek android és IOS operációs rendszeren működnie kell."
+
+4. „Az értékelés megjelenítése azonnal kell történjen.”
+Megoldás: "Az értékelés megjelenítésének 1 mp-n belül kell történnie"
+
+5. „A felületnek a mobilokon megszokott összes kényelmi funkciót támogatnia kell.”
+Megoldás: "A felületnek reszponzívnak kell lennie."
+
+6. „Az étterem tulajdonos bejelentkezésnek biztonságosnak, visszaélési lehetőségektől mentesnek kell lennie.”
+Megoldás: "Az étterem tulajdonos bejelentkezésnek több lépcsős bejelentkezéssel kell történjen, e-mail megadása, sms-kód beírása."
+
+7. „Az éttermek elhelyezését bármely térkép alkalmazásra biztosítani kell tudni.”
+Megoldás: "Az éttermek elhelyezését a Google Maps térkép alkalmazásra biztosítani kell."
+
+8. "A GPS pozíciónk meghatározását és térképre helyezését a legnagyobb pontossággal kell megtenni.”
+Megoldás: "A GPS pozíció meghatározása és a térképre helyezése 1 m pontossággal történjen."

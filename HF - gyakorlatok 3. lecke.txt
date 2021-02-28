@@ -1,0 +1,164 @@
+3/1 Minőség
+
+Adj meg minőségi szempontokat egy autó és egy lakás esetén!
+Mikor tartasz egy autót jó minőségűnek? Adj meg konkrét példákat!
+Mikor tartasz egy lakást jó minőségűnek? Adj meg konkrét példákat!
+
+Minőség: annak mértéke, hogy egy komponens vagy rendszer mennyire elégíti ki az érdekeltek deklarált és hallgatólagos igényeit.
+
+Egy autó jó minőségű, ha pl. jó minőségű alkatrészekből rakják össze, igényes design, komfort és biztonságérzetet nyújt stb. 
+Konkrét példák: BMW, Volvo, Toyota, stb.
+
+Egy lakás jó minőségű, ha jó minőségű építőanyagokat használnak, belső és külső igényes kivitelezéssel, minőségi berendezési eszközökkel, kényelmi funkciókkal, konditerem, portaszolgálat, parkosított zöldterület, stb.
+Konkrét példák: új építésű lakóparkok
+
+
+
+3/2 Szoftver minőség
+
+Sorolj fel szoftverekkel kapcsolatos minőség követelményeket!
+Írj fel öt-öt példát az általad jó és rossz minőségűnek talált szoftverekre! 
+Miért gondolod,hogy jó vagy rossz minőségű? Indokold a választásodat!
+
+Szoftverekkel kapcsolatos minőségi követelmények:
+- jó erőforráshasználat
+- megbízható működés
+- nem fagy le
+- bővithetőség
+- könnyen használható, logikus felépítés
+- felhasználói élményt ad
+- biztonsági funkciók
+- hosszútávu támogatás, rendszeres updatek
+- Skálázhatóság
+- jó UI design
+
+Jó minőségű szoftverek:
+1. MSOffice: megbízható, sok funkciója van, nem fagy le, nagy cég van mögötte, ami minőséget jelent
+2. Gmail: jó design, személyre szabható, bárhonnan elérhető, 
+3. Mac desktop alkalmazások: előre telepített, könnyen használható, felhasználó élmény, biztonsági funkciók, rendszeres frissitések
+4. Google alkalmazások: minimális erőforrással mennek, felhasználóbarát felület, idősek is tudják használni, ingyenes változatok, offline üzemmód is
+5. játékprogramok: élvezhető, skálázhatóság, kiegészítések illeszkednek a korábbi konvenciókhoz, menthető, megállítható
+
+Rossz minőségű szoftverek:
+1. Internet explorer: lassú, összeomlik, nem bővíthető
+2. Chat programok: bugos, lassú, lefagy
+3. Ügyfélkapu: nem átlátható, nem logikus felépítésű
+4. Nokia: nem nyitott a fejlesztői rendszere
+5. Skype: lefagy, sokszor elmegy a hang vagy szaggatottá válik
+
+
+
+3/3 Minőségi kategóriák
+Döntsd el, hogy melyik minőség kategóriába esnek az alábbi követelmények, amelyeket egy banki tranzakciókezelő rendszer követelményspecifikációjából választottunk ki!
+
+1. Egy átutalási tranzakciónak az elindítását követően 15 másodpercen belül be kell fejeződnie.
+Teljesítmény hatékonyság
+
+2. Havi szinten kell egy kimutatást készíteni a sikertelen tranzakciókról külön csoportosítva őket a sikertelenség oka (nincs fedezet, számla felfüggesztésre került, cél
+számla nem található, stb.) szerint.
+Funkcionális alkalmasság
+
+3. A sikertelen tranzakciókat tartalmazó kimutatást csak a pénzügyi csoport felelőse tekintheti meg. 
+Biztonság
+
+4. Amennyiben egy tranzakció sikertelen, a felhasználót megfelelő hibaüzenetben tájékoztatni kell. A hibával kapcsolatos technika részleteket csak a naplóbejegyzés
+tartalmazhatja, azt a felhasználó felé nem kell megjeleníteni.
+Használhatóság
+
+5. 10.000 darab tranzakcióból – technikai hiba miatt – 3 tranzakció hiúsulhat meg.
+Megbízhatóság
+
+6. A rendszer IBM és HP szervereken is működtethető. A szerverek technikai részleteit később tárgyaljuk.
+Hordozhatóság
+
+7. Kritikus, belső technikai hiba esetén az ezen időszakban érkező tranzakciókat össze kell gyűjteni, hogy a hiba elhárítása után feldolgozhatók legyenek.
+Megbízhatóság
+
+8. A sikertelen tranzakciókat tartalmazó kimutatást ki kell tudni nyomtatni az irodában rendszeresített HP Deskjet 2050 nyomtatókon.
+Kompatibilitás
+
+9. A rendszer ujjlenyomat alapján azonosítsa a felhasználót bejelentkezéskor.
+Biztonság
+
+
+
+3/4 Minőségjellemzőkkel kapcsolatos követelmények
+Vegyük a Tesco Webshop alkalmazást az alábbi címen:
+https://bevasarlas.tesco.hu/
+Fogalmazz meg és írj fel 3-3 követelményt minden minőségjellemzőre!
+
+1. Funkcionális alkalmasság: - kosárba tett termékek jelenjenek meg a kosárban, 
+			     - bankkártyával való fizetés, 
+			     - releváns kereső funkció. 
+2. Teljesítmény hatékonyság: - gyors (2mp) oldal betöltés, 
+                             - reszponzív, 
+			     - sok termék esetén is le tudja kezelni a kosárt 
+3. Kompatibilitás: 	- számla nyomtatás, 
+			- minden böngészőben megfelelően fusson az oldal
+                        - minél szélesebb körben legyen kompatibilitás
+4. Használhatóság: 	- Logikus, átlátható megjelenés
+ 			- Egyszerű, ergonomikus használat,
+     			- felhasználói élmény. 
+5. Megbízhatóság: 	- Legyen mindig elérhető a webshop. 
+			- minél kevesebb legyen a kiesés, esetleges kiesés esetén gyorsan álljon fel a rendszer. 
+			- rendszer karbantartás, amikor nincs nagy látogató szám és gyorsan álljon is vissza a rendszer.
+6. Biztonság: 	   - illetéktelenek nem férnek hozzá az adatokhoz, 
+     		   - kártyás fizetési biztonság, 
+		   - adatkezelési szabályok betartása (GDPR)
+7. Karbantarthatóság:      - visszaállítható legyen a kosár tartalmának elvesztése esetén 
+			   - Előre bejelentett karbantartás esetén ne vesszenek el az adatok. 
+			   - Moduláris felépítés
+8. Hordozhatóság:  - könnyen át lehet rakni a rendszert másik platformra, 
+		   - hordozás esetén ne legyen nagy szolgáltatás kiesés,
+		   - ne legyen nagy költsége a hordozhatóságnak.
+
+
+
+3/5 Reszponzív tervezés
+Olvasd el az alábbi linken található leírást a reszponzív tervezésről:
+https://webshark.hu/hirek/reszponziv-design/
+Keress 3-3 példát jó és rossz reszponzív tervezésre!
+
+Jó példák reszponzivitásra: 
+	- Menüstruktúra (hamburger menü)
+	- Képek egymás alá rendezése - követi a mobil view-t
+	- átméreteződő képek és szöveg
+
+Rossz példák reszponzivitásra: 
+	- Menüpontok nem igazodnak a kijelzőhöz 
+	- Lapozó nem igazodik a mobilhoz (kicsi, nem lehet megnyomni, nem látszik) 
+	- Rosszul sorrendezi a weboldal elemeket
+
+
+
+3/6 Konzisztens stílusú weboldal
+Keress 3-3 példát jó és rossz weboldal kialakítására!
+
+Jó weboldal kialakítás: - jófogás.hu, 
+			- facebook, 
+			- google maps.
+
+Rossz weboldal kialakítás: - ügyfélkapu, 
+			   - media markt webshop, 
+			   - Alza.hu.
+
+
+
+3/7 Minőségjellemzők
+Jelölj meg minden alábbi alkalmazáshoz 3 minőségjellemzőt, amely annál kiemelten fontos!
+Válaszaidat indokold néhány mondattal!
+
+▪ Microsoft Word: - funkcionális alkalmasság, 
+		  - használhatóság, 
+		  - megbízhatóság
+▪ Angry Birds: - teljesítmény-hatékonyság, 
+	       - használhatóság, 
+	       - kompatibilitás
+▪ Ubuntu Linux: - biztonság, 
+		- megbízhatóság, 
+		- karbantarthatóság
+▪ GMail: - funkcionális alkalmasság, 
+	 - használhatóság, 
+	 - biztonság.
+ 
+

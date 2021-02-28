@@ -1,0 +1,128 @@
+1/1 Milyen problémát okozhat, hogy szekvenciális projektek végén van a tesztelés jelentős része?
+
+- kevés idő marad a tesztlefedettség elérésére
+- sok hiba felderítetlen marad, gyengébb lesz a szoftver minősége
+- sok tesztelői túlóra
+
+A megoldás: 
+- A tesztelés elkezdése a projekt elején - pl. tesztesetek írásával
+- a fejlesztő számára is segítség folyamatos a visszajelzés 
+- ha mégsem tudunk tesztelni a projekt elejétől, akkor kompromisszumos megoldással esetleg a szoftver nélkülözhető funkcióit nem adjuk ki
+ 
+
+
+1/2 Főszereplők az egyes fázisokban:
+
+Requirement Analysis:     megrendelő, project manager, üzleti elemző, tesztelő
+Design:                   megrendelő, architect, designer,  üzleti elemző, fejlesztő  
+Implementation:           fejlesztő, project manager, tesztelő
+Testing:                  tesztelő, fejlesztő, project manager 
+Deployment - Release:     üzemeltető, project manager, fejlesztő, tesztelő
+Maintenance - Evolution:  üzemeltető, project manager, tesztelő, fejlesztő, megrendelő
+
+A tesztelő és a fejlesztő között ellentét: 'It's not a bug, it's a feature!'
+A közös cél, amiben mindenki érdekelt, hogy a lehető legjobb minőségű termék kerüljön kifejlesztésre.
+Egy sikeres projektet az egyes szereplők közötti megfelelő és hatékony kommunikációval lehet megvalóstani.
+
+
+
+1/3 Együttműködés a többi szereplővel
+
+Gondold végig, hogy mely szereplőkkel kell elsősorban együttműködni és próbáld meg sorrendbe tenni az alapján, hogy kikkel mennyit kell tesztelőként együtt dolgozni!
+
+Elsősorban: - fejlesztővel
+            - más tesztelőkkel
+            - teszt manager
+            - projekt manager
+
+Bizonyos esetekben: - megrendelő 
+                    - felhasználó
+		    - üzleti elemző - pl. dokumentáció review
+
+
+
+1/4 Ellentmondás feloldása
+
+A szoftverfejlesztésben gyakori, hogy nem értünk egyet abban, hogy valami valójában hiba-e, úgy kell-e működnie a rendszernek. 
+Ilyen ellentmondás lehet például két tesztelő vagy egy tesztelő és egy fejlesztő között is. 
+Ilyen szituációban ki lehet az, aki segít eldönteni a kérdést?
+
+Válasz: Egy közös felettesnek kell eldönteni a kérdést, aki rálát a helyzetre: projekt manager, üzleti elemző
+
+
+
+1/5 Tesztelők terhelése
+
+Egy hagyományos, szekvenciális fejlesztési modellt követő projektben a tesztelők legtöbb feladata a projekt utolsó felében van, amikor a fejlesztők már implementáltak részeket az
+alkalmazásból és el tudják kezdeni tesztelni azokat.
+Gondolkodj el és vázolj lehetőségeket, hogy a tesztelők milyen feladatokat végezhetnek a szoftver életciklusának más fázisaiban!
+Milyen módszerekkel lehet biztosítani, hogy nem egyenletes terhelés mellett is jól működjön a munkamegosztás?
+
+
+Requirement Analysis: - reviewer - ellenőrzés: pl. formai követelmények, 
+                      - a tesztelő kézhez kapja a dokumentációt - elkezdthet teszteseteket megfogalmazni
+Design:	- tesztesetek készítése a rendszer működésére. pl. a különböző modulok megfelelően működnek együtt                  
+Implementation: - felkészülés a tesztelésre: tesztek tervezése, teszt környezet összeállítása, 
+                - tesztek implementálása, 
+                - a futtatható forráskód működésének ellenőrzése, stb.           
+Deployment - Release: - tesztesetkészlet a release-re, 
+                      - a legfontosabb funkciók tesztelése
+Maintenance - Evolution: - éles üzem során tapasztalt hibák javítás utáni tesztelése, 
+                         - változások tervezése, implementálása utáni tesztelés
+
+
+
+1/6 Mi történik, amikor hibát találunk?
+
+Tesztelőként egy hiba megtalálása gyakran örömet és büszkeséget okoz: észrevettünk egy problémát, jól végezzük a munkánkat.
+Milyen érzések lehetnek az ügyfélben, projektmenedzserben vagy a fejlesztőben?
+
+- ügyfél: kétely, hogy mi lesz ebből, ha hibák vannak a termékben
+- projektmenedzser: örül, mert egy hibával kevesebb és ezért jobb lesz a termék
+- fejlesztő: nem örül, mert megint kritizálják a munkáját
+
+
+
+1/7 Probléma kommunikálása
+
+Tisztelt Projekt Menedzser, Tisztelt Fejlesztő!
+ 
+Az elkészült rendszer használatakor egy már kijavított hiba újra és újra előjön! 
+A rendszer 10 perc folyamatos használat után hibaüzenet kíséretében leáll és csak a böngészési előzmények teljes törlésével használható újra.
+
+Mivel holnapután terveztük átadni a szofvert a felhasználónak éles üzemre, ezért sürgős megoldásra van szükség, 
+mert ez kritikus hiba a rendszerben, és a megrendelő nem fogja átvenni a szofvert.
+
+Előre is köszönettel,
+a Tesztelő
+
+
+
+1/8 Fejlesztő munkájának véleményezése
+
+Kedves Fejlesztő!
+
+Teszteltem a legutóbb elkészült ablakát az alkalmazásnak és látom, hogy milyen sok munka van benne, nem lehetett egyszerű elkészíteni.
+Gondolom ez is lehet az oka annak, hogy eléggé bonyolultnak tünik a használata, nehéz megérteni a működését és a sok kezelt ajtó miatt az ablak ráadásul lassan tölt be.
+Ezek mellett több felesleges ikon is került a funkcióhoz, amelyek nem lesznek használva és nem is illeszkedik az alkalmazás eddigi külsejéhez, amatőr hatást kelt.
+Úgy vélem, hogy a felhasználóknak is nehézséget és sok bosszúságot fog okozni a használata.
+Véleményem szerint két ablakra kellene bontani a funkciót, ami lehetne az ajtók listája és egy kiválasztott ajtó konfigurálása.
+
+A közös célunk, hogy minnél jobb minőségű terméket szállítsunk a megrendelőnek, mert akkor jobb eséllyel minket fog választani legközelebb is, és ajánlhat is másoknak,
+mint olyan fejlesztőcéget, aki minőséget ad ki a kezéből. 
+
+Megértésedben bízva,
+a Tesztelő
+
+
+
+
+
+
+
+
+
+
+
+
+
