@@ -1,0 +1,167 @@
+6/1 Gyakorlat - Tesztfelügyelet
+
+A fenti példák alapján készíts Excelben egy kördiagramot, amely a felsővezetés számára bemutatja a hibák állapotának 
+(nyitott, lezárt, javitott, javitás alatt) százalékos eloszlását a projekt aktuális időpontjában! 
+
+A megoldás a 6.1 gyakorlat.jpg fájlban
+
+
+
+6/2 Gyakorlat – Tesztelemzés
+
+Nézd át a WebKincstár - Felhasználói Kézikönyv_3.pdf dokumentumot és olvasd el a 3. fejezetet. 
+Tekintsd ezt tesztbázisnak és írd össze, hogy milyen funkciókat tesztelnél!
+
+Az alábbi funkciókat lehetne tesztelni: 
+	- Alapvető UI tesztek, megjelenítés 
+	- Felhasználó név: alapértelmezettként az Ügyfél-azonosító (8 számjegyű).
+	- Egyszeri Jelszó, amely első belépéskor kötelezően megváltoztatandó -  megfelel-e minden jelszó specifikációnak?
+	- Letiltás funkciót - 5 egymás utáni sikertelen belépési kísérlet után.
+	- Jelszó újraigénylés menetét - "elfelejtett" jelszó esetén a Webkincstár bejelentkezési felületén
+	- Jelszó módosítása vagy letiltása Telekincstáron keresztül
+
+
+
+6/3 Gyakorlat - Tesztmegvalósítás
+
+Milyen előnyökkel jár, ha nagyon részletesen dolgozzuk a teszteseteket, teszteljárásokat?
+
+	- Könnyen tudjuk pótolni, ha valaki kiesik a projektből, például betegség miatt 
+	- Junior tesztelők vagy az alkalmazást nem ismerő tesztelők is bevonhatók a tesztelésbe
+	- Megismételhetővé teszi a tesztet.
+	- A talált hibák reprodukálhatóak lesznek
+	- A szubjektíven értelmezett tesztesetek (amit többféleképpen is végre lehet hajtani) kiküszöbölhetőek.
+
+
+
+6/4 Gyakorlat - Tesztmegvalósítás
+
+Milyen tesztadatokra van szükségünk, amikor a WebKincstár – Felhasználói kézikönyv 3.Fejezetében azonosított funkciókat szeretnénk tesztelni?
+
+	- Felhasználó név (Ügyfél-azonosító)
+	- Jelszó
+	- Létrehozott ügyfél adatai
+	- Megnyitott számla adatok
+
+
+
+6/5 Gyakorlat - Tesztmegvalósítás
+
+Gondold át, hogy milyen feltételeket támasztanál a tesztkörnyezettel kapcsolatban, amikor a WebKincstár – Felhasználói kézikönyv 3. Fejezetében azonosított funkciókat szeretnéd tesztelni?
+
+A tesztkörnyezet alatt a tesztelést támogató eszközök együttesét értjük, beleértve minden szűkséges hardwer és szoftver eszközt.
+Műszaki tesztervezéskor: megtervezzük a tesztkörnyezetet.
+Tesztmegvalósításkor: összerakjuk a tesztkörnyezetet.
+	- Böngésző kompatibilitás vizsgálata
+	- Mobiltelefonos reszponzivitás
+	- Adatbázis hozzáférés, adatbázis lekérdezéshez kapcsolódó szoftverek
+	- Operációs rendszer szimulátorok
+
+
+
+6/6 Gyakorlat – Tesztlezárás
+
+Elemezd, hogy miért fontos egy tesztelési projekt lezárásakor a gyűjtött információk és a létrehozott tesztelési elemek (tesztnaplók, hibajegyek, riportok, stb.) archiválása? Mire lehet ezeket a jövőben használni?
+
+	- Új projekt megtervezése során 
+	- Új projekt idő és költségbecslésénél
+	- A tesztelési folyamatok javítására
+	- Hiba elemzésre (tapasztalat alapú technikáknál)
+	- Esettanulmányként betanításnál
+
+
+
+6/7 Gyakorlat - Tesztelési ütemterv
+
+Telepítsük az alábbi programot:
+- Alternatv Microsoft Project szoftver
+	https://www.projectlibre.com/
+
+Nyíssuk meg a példa projekt ütemtervét (Masterfield_Tesztfolyamat_Példa.xml)! Elemezzük az egyes lépéseket: ki végzi el és mennyi időt fordítunk rá?
+
+6.7 gyakorlat.pdf -ben a megoldás.
+
+
+
+6/8 Gyakorlat – Agilis tesztelés
+
+A tesztfolyamatot tárgyaló elméleti rész alapján határozd meg az agilis tesztelést bemutató példa esetén, hogy melyik lépés során mi történik!
+Például:
+1. User story analysis: a felhasználói követelmények elemzése. A korábban látott folyamat esetén ez a TESZTELEMZÉS lépés.
+
+2. Plan&Estimate : - idő és költség becslés = TESZTTERVEZÉS
+3. Test design&review: - Hogyan teszteljünk? = MŰSZAKI TESZTTERVEZÉS
+4. Setup test environment: - tesztkörnyezet felállítása (rendelkezésünkre áll-e minden, ami a teszt futtatásához szűkséges?) = TESZTMEGVALÓSÍTÁS
+5. Test execution: - a tesztkészletet az ütemtervben meghatározott sorrendben futtatjuk = TESZTVÉGREHAJTÁS
+6. Defect reporting: - hibajelentések lezárása, megoldatlan hibák listájának létrehozása = TESZTLEZÁRÁS
++1 Daily standup: napi megbeszélés, amelyen a résztvevők állva vesznek részt, célja, hogy az értekezletek rövidek legyenek
+
+
+
+6/9 Gyakorlat - Tesztfolyamat
+
+Sorolj fel olyan eseteket, amikor a tesztfelügyelet alatt álló lépések során kiderül, hogy a teszttervet is módosítani kell!
+(Segítség: az egyik tesztelési alapelv megjelenése is okozhat ilyen esetet.)
+
+A tesztfelügyelet alatt álló lépések:
+1. Tesztelemzés
+2. Műszaki teszttervezés -nél lehetnek olyan részei a teszttervnek, amit nem tudunk lefedni tesztekkel, ezért módosítani kell a teszttervet
+3. Teszt megvalósítás
+4. Tesztvégrehajtás-kor belefuthatunk egy hibafürtbe. A megjósolt hibafürtök és a tesztelés vagy működés során ténylegesen megfigyelt hibafürtök fontos bemenetként szolgálnak a tesztelési erőforrások összpontosítása érdekében alkalmazott kockázatelemzés számára. Utólag módosítani kell a teszttervet, hogy erőforrás átcsoportosítással megoldjuk a felmerült helyzetet vagy a tesztelés befejezési időpontját el kell toljuk.
+
+
+
+6/10 Gyakorlat - Tesztfolyamat
+
+Foglald össze egy-egy mondatban, hogy melyik fő tevékenységcsoportnak mi a feladata!
+Add meg, hogy adott tevékenységcsoportért ki a felelős!
+
+1. Teszttervezés: A TESZTMENEDZSER meghatározza a tesztelés céljait és a célok teljesítésének módját. (pl. megfelelő teszttecknikák és feladatok specifikálása, teszt ütemtervének kialakítása a határidők betartása érdekében.)
+2. Tesztfelügyelet és irányítás: A TESZTMENEDZSER végíg kíséri az egész folyamatot: az aktuális előrehaladás és a tervezett előrehaladás folyamatos összehasonlítása. A tesztirányítás a teszttervben foglalt célok eléréséhez szükséges tevékenységek végrehajtását foglalja magába.
+3. Tesztelemzés: a TESZTELŐK a tesztbázist elemzik annak érdekében, hogy azonosítsák a tesztelhető funkcionalitásokat, a tesztbázisban előforduló hibákat.
+4. Műszaki teszttervezés: a TESZTELŐk tesztesetek terveznek és priorizálnak, meghatározzák a tesztadatokat, megtervezik a tesztkörnyezetet, majd meghatározzák a tesztbázis és a tesztesetek közötti kétirányú nyomonkövethetőséget.
+5. Teszt megvalósítás: a TESZTELŐk részletesen kidolgozzák a tesztvégrehajtáshoz szűkséges, a műszaki teszttervezés során megtervezett elemeket, pl. teszteseteket teszteljárásokba szervezik, amely meghatározza azok végrehajtási menetét. Ebben a fázisban minden rendelkezésre kell álljon a tesztek futtatásának elkezdéséhez.
+6. Tesztvégrehajtás: a TESZTELŐk a tesztkészletet a tesztvégrehajtási ütemtervben meghatározott sorrendben futtatják. A tesztek végrehajtása során tapasztalt eltérő viselkedésről, az elvárt és a ténylegesen kapott eredmények eltéréséről, a rendellenességekről hibajegyet nyitunk, amelyhez csatoljuk a szükséges információkat.
+7. Tesztlezárás: a TESZTMENEDZSER elkészíti a tesztjelentéseket
+                 a TESZTELŐ archiválja a tesztelés során létrehozott elemeket
+
+
+
+6/11 Gyakorlat - Junior tesztelő feladatai, szakmai fejlődés
+
+Nézd át a tesztfolyamatot olyan szemmel, hogy junior tesztelőként mely részekkel kezdesz el legvalószínübb esetben először foglalkozni és hogyan lesznek újabb feladataid. ahogy szakmailag fejlődsz!
+
+Tesztelemzés lépésnél junior tesztelő feladat lehet a tesztbázis statikus elemzése, a tesztbázisban lévő hibák azonosítása. Pl. kétértelműségek, kihagyások, inkonzisztenciák, pontatlanságok, ellentmondások, felesleges részek, stb.
+A tesztmegvalósítás során részletesen kidolgozott tesztesetek és teszteljárások végrehajtása manuálisan vagy automatizáltan. Hibajelentés a megfigyelt meghibásodások alapján.
+Tesztlezárásnál a tesztkörnyezet, a tesztadatok, a teszt infrastrúkturan és más a tesztelés során létrehozott elem archíválása későbbi felhasználásra. A befejezett teszttevékenységek tanulságainak elemzése a jövőbeli iterációkhoz, kiadásokhoz. A gyűjtött információ felhasználása a tesztfolyamat fejlesztésére. Mit tudtunk volna jobban csinálni? Mit rontottunk el? Mi az, ami megfelelő volt? - Tanulságok levonása.
+
+Ahogy szakmailag fejlődik a junior tesztelő egyre több tesztelői feladatban részt vehet:
+Tesztelemzésben pl. a tesztelhető funkcionalitások azonosítása.
+Műszaki teszttervezésben tesztesetek tervezése és priorizálása.
+A tesztmegvalósítás során tesztadatok előkészítése és a tesztkörnyezetbe való betöltése, teszteljárások készítése tesztesetekből.
+A tesztvégrehajtásnál a rendellenességek, eltérések elemzése, a valószínű okok megtalálásának céljából.
+Tesztlezáráskor összefoglaló tesztjelentés készítése az érintett felek tájékoztatása céljából.stb.
+
+
+
+6/12 Gyakorlat - Java release folyamat
+
+A Java fordító és futtató környezet korábbi verziói az ábrán (14 old.). Egy adott Java verzió release folyamata további lépésekre bontható:
+- Feature Complete - Minden funkció implementálva lett és beintegrálva a rendszerbe, az egységtesztekkel együtt. - fejlesztői feladat
+- Developer Preview - Egy eléggé stabil felépítés, ami alkalmas széleskörű tesztelésre a fejlesztői közösség által. Ez a fejlesztés tartalmazza az összes tervezett funkciót, kivéve, ha másképp rendelkeznek. - fejlesztő
+- All Tests Run - Minden tervezett teszt le lett futtatva legalább egyszer, minden támogatott platformon. - tesztelő
+- Rampdown - Fázisok, amelyekben egyre nagyobb szintű ellenőrzést alkalmaznak a bejövő változtatásokra. Az első fázisban, csak a P1-P3 hibák javíthatók. A második fázisban pedig csak a showstopper hibákat lehet javítani.- fejlesztő
+- API/Interface Freeze - Ezt követően az API-k és más interfészek, beleértve a JSR-komponensben definiáltakat is, csak a showtopper hibák kijavítása érdekében módosíthatók. - fejlesztő
+- Zero Bug Bounce (ZBB) - A hiba backlog teljes mértékben összeállítva. Nincs olyan nyított hibajegy, amely régebbi, mint 24 óra, és más hibák kijavítását elhalasztottak egy későbbi kiadásra. - tesztelő
+- Final Release Candidate - Az a dátum, amelyen belül a végső kibocsátásra pályázó szoftvert be kell jelenteni és el kell küldeni tesztelésre. Egy vagy több kibocsátásra pályázó szoftvert a tervezett ZBB-dátum után kell bejelenteni; ha a mérföldkő után egy másikra van szükség, akkor a GA-dátum veszélybe kerül. - fejlesztő
+- General Availability - végső release, a termék használatra kész. - tesztelő
+
+Az alábbi linken található leírások alapján írd le egy-egy mondatban, hogy melyik lépésnél mi történik és kinek (fejlesztő, tesztelő) a feladata.
+https://www.dariawan.com/blog/lesson-jdk-release-milestones/
+
+
+
+
+
+
+
