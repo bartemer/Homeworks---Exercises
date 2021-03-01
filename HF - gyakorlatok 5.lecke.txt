@@ -1,0 +1,147 @@
+5/1 Gyakorlat – Verifikáció&Validáció
+
+Írjatok le 3-3 példát olyan szoftver hibákra, amelyeket verifikáció vagy validáció során találhatunk!
+
+Verifikáció hibák: 
+	- Az átadott webshop nem tud kezelni nagyobb mennyiségű megrendelést, lelassul
+	- a szoftver telepítése során nem fut végig a telepítő.
+	- Webshopban történő rendelés után nem érkezik visszaigazoló email a rendelésről.
+
+Validáció hibák:
+	- A szoftver tökéletesen működik, de bonyolult a felépítése. Viszont a Megrendelő felhasználói idős emberek, akik egyszerű, könnyen használható programot tudnak kezelni.
+	- A webshop jól működik, de nincs akadálymentesített olvasó funkciója, noha a Megrendelő célcsoportja főleg a látássérült emberek. 
+	- A mobilos alkalmazás tökéletesen működik Androidon, de az IPhone felhasználók számára használhatatlan.
+
+
+
+5/2 Gyakorlat – Hibák jelenléte
+Olvasd el figyelmesen a kapcsolódó anyagok között található, szoftver fejlesztési JÓTÁLLÁSI FELTÉTELEK-re vonatkozó szerződést. 
+Jelezd, ha valamelyik tesztelési alapelvet sérti a szerződés valamely pontja! Válaszodat indokold!
+
+A szerződés 1. pontjának 2. bekezdésében 
+"... a Vállalkozó felelősséget vállal, hogy az átadáskor hibátlan szoftverterméket bocsát a Megrendelő rendelkezésére,..." 
+	- a hibamentesség egy téveszme, mert hiába találnak meg és javítanak ki sok hibát, attól még maradhat felderítetlen hiba a rendszerben, vagy nehezen használható lesz a rendszer
+
+A szerződés 1. és 2. pontja között ellentmondást vélek felfedezni:
+	- az 1. pontban úgy fogalmaz a szerződés, hogy "... (a szoftvernek) nincs olyan rejtett hibája, amely csak később fog kiderülni."
+	- a 2. pontban viszont azt olvasom, hogy "Vállalkozó a jótállás keretében... köteles eljárni és a hibát javítani." - akkor mégis lehet hiba a rendszerben?
+
+
+5/3 Gyakorlat - Alapelvek megsértése
+Mely tesztelési alapelveket sértik az alábbi állítások, szituációk?
+
+1. Egy biztonságtechnikai IT fejlesztőcégnél több alkalmazást fejlesztenek párhuzamosan: egy tűzfal alkalmazást, egy incidens bejelentő formot és egy tevékenység naplózó alkalmazást.
+Mindhárom alkalmazást ugyanaz a 10 fős tesztcsapat teszteli. Mindhárom esetén 300 tesztesetet készítenek el és futtatnak. A tesztidőszak is azonos, mindhárom esetben 1 hónap.
+	- A TESZTELÉS FÜGG A KÖRÜLMÉNYEKTŐL
+
+2. Egy tesztelési projektben két tesztelő dolgozik párhuzamosan, Gábor és István. A vezetőség korábban jóváhagyta, hogy a tesztelők a napi szinten megtalált hibák mennyisége alapján
+kapják a fizetésüket. Az egyik hónapban Gábor 95, míg István mindössze 10 hibát talált. Ebben a hónapban István fizetése jelentősen elmaradt Gábor fizetésétől.
+	- A TESZTELÉS A HIBÁK JELENLÉTÉT MUTATJA, NEM A HIÁNYUKAT
+
+3. Egy tesztelési projektben létrehoztunk három teszthalmazt, amelyeket tesztciklusonként cserélgetünk. Minden halmazunk 200 tesztesetet tartalmaz. Az alkalmazásból tervezetten
+havonta adunk ki új verziót és verziónként egy új tesztciklust hajtunk végre. Az alkalmazás jelenleg a v15 verziónál tart.
+	- FÉREGIRTÓ PARADOXON
+
+4. Egy szoftver fejlesztése során a vezetőség úgy dönt, hogy a tesztelők nem vehetnek részt a tervezési és fejlesztési időszakban. Miután a fejlesztés véget ért, a tesztelők megkapják a
+rendszer dokumentációit, hogy megtervezzék és elvégezzék a tesztelést.
+	- KORAI TESZTELÉS időt és pénzt spórol
+
+5. Azt a feladatot kaptad, hogy egy funkció leteszteléséhez készíts és hajts végre 150 tesztesetet. A tesztesetek végrehajtása során nem találtál hibát. Zárásként írsz egy emailt és
+tájékoztatod a tesztelési vezetődet, hogy a tesztelt funkció hibátlan.
+	- A TESZTELÉS A HIBÁK JELENLÉTÉT MUTATJA, NEM A HIÁNYUKAT
+
+6. Azt a feladatot kaptad, hogy egy funkció leteszteléséhez készíts és hajts végre 150 tesztesetet. A tesztesetek végrehajtása során nagyon sok hibát találtál, amiket a fejlesztők
+kijavítottak. A javításokat újra tesztelted és a funkció működését megfelelőnek tartod. Viszont az elejétől zavar téged, hogy a funkció végrehajtása után az alkalmazás elfelejti a
+bejelentkezést és újra a bejelentkezési képernyőre navigál, ahol be kell jelentkezned. Már ellenőrizted a dokumentációkat és úgy látod, hogy ez nem funkcionális hiba, a rendszer a specifikációnak megfelelően működik. Azonban jelzed, hogy a rendszer használhatósága így nem megfelelő.
+	- HIBAMENTESSÉG TÉVESZMÉJE
+
+7. Egy banki folyószámlavezető szoftverben három funkciót tesztelsz: átutalás, számlanyitás, számla megszüntetése. A számlanyitás és a számla megszüntetése funkciókban viszonylag
+kevés hibát, de az átutalás funkcióban nagyon sok hibát találtál. Jelzed az észrevételt a tesztelési vezetődnek és kéred, hogy további teszteket dolgozhass ki és futtathass az átutalás
+funkcióra. A vezetőd azonban közli veled, hogy ez felesleges munka lenne.
+	- HIBAFÜRTÖK, a rendszer részei nem egyformán bonyolultak
+
+
+
+5/4  Gyakorlat - Input kombinációk
+
+Hányféle kombinációja lehet az inputoknak a megadott képernyőnél?
+
+Ügyfél neme: Férfi/Nő
+Életkor: 1-99
+Irányítószám: 4 darab 0-9 számjegyből áll!
+
+A kombinációk száma = 2*99*10^4 = 1.980.000 féleképpen lehet kitölteni a 3 elemből álló beviteli mezőket.
+
+Viszont jelenleg Magyarországon 3540 valid irányítószám létezik. 
+Forrás: https://xn--irnytszmok-t4af6mnd.cybo.com/magyarorsz%C3%A1g/
+
+Ezért a helyes megoldás: kombinációk száma = 2*99*3540= 700920 féleképpen lehet kitölteni.
+
+
+
+5/5 Gyakorlat - Tesztelési alapelvek
+Keress példát valamely tesztelési alapelvre a gyakorlatban!
+
+Féregirtó paradoxon - egy idő után a féregirtók nem hatékonyak a rovarok elpusztításában, nem lehet ugyanazzal a féregirtóval további rovarokat elpusztítani
+
+
+
+5/6 Gyakorlat - Tesztelési alapelvek
+Hasonlítsd össze az autógyártást és egy szoftver elkészítését a tesztelési alapelvek mentén!
+Minden alapelvhez írj néhány mondatot, hogy szerinted hogyan jelenik meg az alapelv az adott iparágban.
+
+1. A tesztelés a hibák jelenlétét mutatja nem a hiányukat
+	- autógyártás: a teszteléssel csökken az esélye annak, hogy hiba maradjon a rendszerben, de bizonyos hibák benne maradnak, amik csak ritka körülmények között jöhetnek elő
+	- szoftver elkészítése: a tesztelés csak a hibákat tudja kimutatni egy szoftverben
+
+2. Nem lehetséges kimerítő teszt
+	- autógyártás: pl. légzsákok tesztelése, hogy működőképes-e
+	- szoftver elkészítése: a rengeteg bemenet és előfeltétel miatt a gyakorlatban kivitelezhetetlen a kimerítő tesztelés
+
+3. A korai tesztelés időt és pénzt spórol
+	- autógyártás: az alkatrészeket már elkezdjük tesztelni, és nem a kész autót, mert akkor vissza kell bontani, vagy súlyos esetben hamár forgalomba lett helyezve, akkor  vissza kell hivni
+	- szoftver elkészítése: egy szoftver életében minél később találunk meg egy hibát, vagy minél később következik be egy feltáratlan hibából eredő meghibásodás, annál komolyabb költséggel kell számolnunk. Ezért a projekt minden fázisa után alapos tesztelésnek kell alávetni a szofvert.
+
+4. Hibafürtök megjelenése
+	- autógyártás: egy bonyolultabb alkatrészben több hiba kerülhet elő, mint egy egyszerűbben
+	- szoftver elkészítése: minél bonyolultabb egy szofver funkció annál nagyobb esély van rá, hogy hibákat találunk benne
+
+5. Féregírtó paradoxon
+	- autógyártás: ha ugyanúgy tesztelünk egy alkatrészt, akkor pl más jellegű hibákat nem tudunk kiszűrni
+	- szoftver elkészítése: ha minden szoftververziónál ugyanazokat a teszteket futtatjuk, akkor egy idő után az adott tesztkészlet kimerül
+
+6. A tesztelés függ a körülményektől
+	- autógyártás: egy autó önvezető, vagy fékrendszerét másképp tesztelük, mint pl. az ablaktörlő rendszer működését
+	- szoftver elkészítése: egy biztonság kritikus irányító szofvert másképp kell tesztelni, mint egy e-kereskedelmi mobil alkalmazást
+
+7. A hibamentesség egy téveszme
+	- autógyártás: a rengeteg alkatrész miatt kimerítő tesztelés nem lehetséges, ezért maradhatnak rejtett hibák, amelyeket a tesztkészlet illetve a bemenő adatok, előfeltételek nem tudnak lefedni 
+	- szoftver elkészítése: azzal, hogy sok hibát megtalálunk egy szoftverben, nem garancia arra, hogy hibátlan lesz, mert kimerítő tesztelés nem lehetséges a gyakorlatban
+
+
+
+5/7 Gyakorlat - Tesztelési alapelvek
+Válassz egy jól ismert alkalmazást és próbálj példákat találni arra, hogyan jelentkezhetnek a tesztelési alapelvek annál az alkalmazásnál
+
+pl. Tesco webshop
+
+1. A tesztelés a hibák jelenlétét mutatja nem a hiányukat
+	- tesztekkel nem tudjuk bizonyítani a hibamentességet, csak azt, hogy vannak hibák a rendszerben
+	
+2. Nem lehetséges kimerítő teszt
+	- a nagy számú termék és kosárösszetétel variáció miatt gyakorlatilag lehetetlen minden bemeneti lehetőséget tesztelni
+	
+3. A korai tesztelés időt és pénzt spórol
+	- összetett rendszer esetén is, jobb az elejétől fogva elkezdeni a tesztelést, hogy hibás egység ne kerüljön bele a rendszerbe, mert azt utána költségesebb helyrehozni
+	
+4. Hibafürtök megjelenése
+	- egy bonyolultabb funkcióban (pl. kosár funkció) minden bizonnyal több hibára lehet számítani, mint pl. a bejelentkezés funkcióban, ezért alaposabb tesztelésnek kell alávetni
+	
+5. Féregírtó paradoxon
+	- ha ugyanazzal a tesztkészlettel vizsgáljuk pl. a termékek közötti keresés funkciót, akkor egy idő után nem találunk több hibát, mert más jellegű hibák megtalálására mésféle tesztek szűkségesek
+	
+6. A tesztelés függ a körülményektől
+	- nem lehet pl. ugyanannyit tesztelni egy bejelentkezés funkciót, mint egy kosárfunkció működését
+	
+7. A hibamentesség egy téveszme
+	- mivel nem tudtunk kimerítő tesztelést végezni nagy számú bemeneti adat (termékek, mennyiségek, kosárösszetételek) miatt, ezért nem tudjuk kijelenteni, hogy hibamentes lett a webshop
