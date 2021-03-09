@@ -1,0 +1,146 @@
+1. GYAKORLAT – TERMÉKKOCKÁZATOK ÉS MINŐSÉGJELLEMZŐK
+
+Egy távközlési szolgáltató számlavezető rendszerére az alábbi termékkockázatokat határoztuk meg. Az egyes kockázatok melyik tanult szoftver minőségjellemzőhöz kapcsolódnak  elsősorban?
+
+A. Hibás áfa számítás a számla elkészítésekor						- Funkcionális alkalmasság
+B. Előfizetők más számláját is láthatják az online felületen					- Biztonság
+C. A havi számlák generálása sok ismétlődően végrehajtott művelet miatt leáll		- Megbizhatóság 
+D. Csak a hibakód jelenik meg a felhasználónak, a hibaüzenet nem				- Használhatóság
+E. 200 tételt tartalmazó számlák megjelenítése rendkívül lassú				- Teljesítmény hatékonyság
+F. Egy operációs rendszer frissítés után egyes funkciók nem működnek megfelelően		- Kompatibilitás
+G. A számlázási programmodul bonyolultsága megnehezíti és lelassítja a hibák javítását	- Karbantarthatóság
+H. A rendszer admin felülete csak Microsoft Edge böngészőben használható			- Hordozhatóság
+
+
+
+2. GYAKORLAT – TESZTELÉSI CÉLOK
+
+Melyik lehet a legfontosabb tesztelési cél az alábbi esetekben?
+
+A. Specifikáció felülvizsgálata annak érdekében, hogy megfelelő minőségű dokumentumok alapján kezdjük el a fejlesztést.	
+	- Kiértékelés
+B. Átfogó rendszer teszt, ahol a követelményekhez teszteket tervezünk és futtatunk.	
+	- Verifikálás
+C. A rendszer átadása előtt az ügyfél a saját felhasználóival átnézi a rendszer által megvalósított üzleti folyamatokat, mindegyiket kipróbálják és megbizonyosodnak arról, hogy fogják tudni használni.	
+	- Validálás
+D. A már működő alkalmazáshoz a fejlesztők elkészítettek új funkciókat és szeretnénk arról megbizonyosodni, hogy a régi, eddig jól működő funkciók még mindig jól működnek.	
+	- Bizalom kiépítése
+E. Biztonsági tesztelő az alkalmazás titkosítását megpróbálja feltörni, keresi a rendszer biztonság szempontjából gyenge pontjait.	
+	- Hibák megtalálása
+F. A fejlesztők által tesztelésre átadott új verzión egy gyors tesztet futtatunk, hogy meggyőződjünk arról, érdemes elkezdeni a tesztelést és a rendszer megüti a szükséges alap szintet, nincsen tele hibával.		- Információ biztosítása
+G. A Magyarországon használt számlázó szoftvereknek meg kell felelniük az Áfa törvényben leírt követelményeknek, így például azt is ellenőrizni kell, hogy a számla sorszámozásának folytonosnak kell lennie.
+	- Jogszabálynak való megfelelés
+
+
+
+3. GYAKORLAT - TESZTELŐI GONDOLKODÁSMÓD
+
+A tesztelői gondolkodásmódhoz a költség, idő és funkciók hármasból melyik áll a legközelebb? Melyiket képviseli szerinted egy tesztelő a projektben?
+
+Válasz: A tesztelő minőségközpontúan kell gondolkodjon, ezért a funkciót kell képviselnie egy projektben. Az üzleti célok más szereplőknek fontosak.
+
+
+
+4. GYAKORLAT - BEFEJEZÉSI FELTÉTELEK KIALAKÍTÁSA
+
+Az alábbi három példa projektre próbálj kialakítani egy szempontrendszert, amelyet lehetne alkalmazni a tesztelés befejezési kritériumaként.
+	1. Lőszereket és fegyvereket is árusító vadászbolt online áruháza
+	2. Azonnali átutalásokat megvalósító bankközi informatikai rendszer
+	3. Önvezető metrószerelvényen futó járművet irányító szoftver
+
+A rendszerekben a felsorolt sorrendben egyre nagyobb kockázat rejlik.
+Egyre formálisabb egyre szigorúbb befejezési kritériumot kell megfogalmazni, amelynek minden pontjának teljesülnie kell.
+
+
+
+5. GYAKORLAT – TESZTELÉS AKTUÁLIS ÁLLAPOTA
+
+Egy projekt esetén az alábbi grafikonon láthatjuk, hogy időben előre haladva összesen hány hibát találtunk (Total Found), és abból összesen mennyit javítottunk ki (Total Fixed). 
+
+	1. Értékeld a projekt aktuális állását és gondold végig, hogy a termék kiadása mikor következhet be!
+
+	2. Miért lehet lapos a görbe az első hetekben?
+
+	3. A két grafikon (Total Found – Total Fixed) közti különbség mit reprezentál?
+ 
+Megoldás:
+1. A talált hibák száma a projekt első négy hónapjában alacsony volt, a rá következő öt hónapban meredeken emelkedett és ez még mindig tart. Mivel egyre több hibát fedezünk fel a rendszerben, ezért még sok munka lesz vele és elég távolinak tűnik a termék kiadása. A helyzet akkor lesz megfelelő a kiadáshoz, amikor a görbék el fognak laposodni és egyre közelebb lesznek egymáshoz.
+
+2. Lapos azért lehet az első hetekben, mert: 	
+	- inkább teszteket tervezünk és csak keveset futtatunk,
+	- még nem teljes erőforrással tesztelünk,
+	- nem készült el a termék, ezért kevés a tesztelhető funkció,
+	- esetleges hibafürtök nagyobb eséllyel alakulnak ki a projekt későbbi fázisaiban
+
+3. A két grafikon közti különbség a nyitott hibák számát mutatja.
+
+
+
+6. GYAKORLAT – KOCKÁZATOK SZERINTI SORREND
+
+Az alábbi rendszerekben rejlő termékkockázatok szerint milyen sorrendet állítanál fel aszerint, hogy melyik mekkora kockázatot rejt? 
+Egyértelmű sorrendet ilyen kevés információ alapján nehéz felállítani, de legalább 3 kategóriára oszd szét a rendszereket: magas, közepes és alacsony kockázat! 
+Megoldásod indokold! Határozz meg szempontokat, amelyek mentén meg tudod ítélni a kockázatokat!
+
+A. Atomerőmű HR rendszere részeként használt munkaidő nyilvántartó szoftver
+B. Szállítmányozási vállalat több célállomás közötti útvonal tervező szoftvere
+C. Lőszereket és fegyvereket is árusító vadászbolt online áruháza
+D. Vasúti jegyellenőröknél használt kéziszámítógépes rendszer jegyek és bírságok kiállítására
+E. Mobilon pénzben is játszható póker alkalmazás
+F. Vérből méreganyagok kiválasztására használt dialízis gép vezérlő programja
+G. Utasszállító repülőgép összes súly és szükséges üzemanyag számító kalkulátor program
+H. COVID vírusfertőzött kontaktkutató mobil alkalmazás
+I. Azonnali átutalásokat megvalósító bankközi informatikai rendszer
+J. Önvezető metrószerelvényen futó járművet irányító szoftver
+K. Személygépjárműbe épített fékerőszabályzó szoftver
+L. Épület villamossági tervező szoftver
+
+Megoldás:
+	- Magas kockázat (közlekedésbiztonsági rendszerek, ahol ember életek foroghatnak kockán): F, G, J, K 		
+	- Közepes kockázat (jelentős kockázatú rendszerek, ahol főleg anyagi károk keletkezhetnek): C, E, I, L
+	- Alacsony kockázat (a maradék esetek, amelykben sem ember életek, sem gazdasági veszélyek nincsenek): A, B, D, H
+
+
+
+7. GYAKORLAT – KIADHATÓ-E A SZOFTVER?
+
+Az előző feladatban leírt szoftverek az alábbi hibákat tartalmazzák. Kiadnád-e a szoftvert használatra? 
+3 kategóriát használhatsz: kiadható, nem adható ki, határeset. Indokold a válaszodat!
+
+A. Szombati munkanapok esetén a rendszer maximum 8 óra munkaidőt ír jóvá
+B. Napi 30-nál több célállomás esetén nem látszik a képernyőn az összes cél és nem is lehet lapozni, se görgetni
+C. A csak dobozzal vásárolható termékek egyesével is betehetők a kosárba
+D. Az adatok lassú szinkronizálása miatt az elmúlt 15 percben online vásárolt jegyek nem jelennek meg a jegykezelő eszközén
+E. A leírás szerinti maximum 1 perces következő lépésre fordítható idő valójában 61 másodperc
+F. A percben megadandó dialízis művelet hossz megadásakor nem írja ki a rendszer, hogy mi a mértékegység (óra vagy perc)
+G. Az utasok tömegének a repülő teljes súlyának kiszámításakor használt alapértelmezett értékét (férfiak 90kg, nők 81kg, 13 év alatti gyermekek 34kg) nem lehet megadni, csak a specifikációban amúgy nem igényelt extra felhasználói jogosultságokkal
+H. Android 2-es verzión az alkalmazás a helyadatokat rosszul használja és téves pozitív eseteket generál
+I. 100.000.000 Ft feletti utalások esetén a rendszer 2 percig feleslegesen várakoztatja az utalást
+J. A szerelvény egy hiba miatt későn kezdhet el lassítani az egyik állomásnál és pár méterrel túlfuthat az állomáson.
+K. Az elvárt 10ms válaszidő helyett az eszköz csak 12ms alatt küld választ egyes impulzusokra.
+L. A szükséges kábelhossz kiszámításnál a szoftver a specifikációtól eltérően nem cm-es pontos értéket ír ki, hanem kerekít méterre
+
+Megoldás:
+	- Kiadható (a kockázatok a vállalható szinten belül vannak, nem kritikusak): A, B, E, G, H, L
+	- Határeset (olyan hiba, ami lehet előnyös is hátrányos is, attól függ honnan nézzük): I, 
+	- Nem adható ki (jelentős biztonságkritikus kockázatok, amelyek emberéleteket veszélyeztetnek vagy jelentős anyagi károk keletkezhetnek): C, D, F, J, K
+
+
+8. GYAKORLAT – TESZTELÉSI ALAPELVEK ÉS BEFEJEZÉSI KRITÉRIUMOK
+
+Melyik tesztelési alapelvek hozhatók kapcsolatba a befejezési kritériummal? Mi az összefüggés köztük?
+
+Megoldás:
+	- A tesztelés csak a hibák jelenlétét mutatja meg, hiányukat nem. Ezért olyan befejezési kritérium nem lehet, hogy érjük el a hibamentességet.
+	- A kimerítő tesztelés nem lehetséges. A gyakorlatban nem tudjuk megvalósítani, hogy teszteléskor minden lehetséges inputot kipróbáljunk.
+	- A tesztelés függ a körülményektől. Minden alkalmazás más. Amelyikben nagyobb kockázat van, alaposabb tesztelésnek fogjuk alávetni.
+
+
+
+
+
+
+
+
+
+
