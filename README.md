@@ -1,2 +1,2 @@
 # Homeworks---Exercises
-első 6 lecke gyakorló feladatai 
+első 7 lecke gyakorló feladatai 
